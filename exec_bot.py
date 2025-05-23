@@ -1,12 +1,18 @@
 import requests, telebot, time, datetime, threading, queue, os
 from mcrcon import MCRcon as rcon
 import public_ip as ip
+from dotenv import load_dotenv
+import os #provides ways to access the Operating System and allows us to read the environment variables
+
+load_dotenv()
+
+key = os.getenv("TELEGRAM_KEY")
 
 admins_list = []
 admin_users = []
 start_log = []
 start_time_log = []
-bot = telebot.TeleBot("")
+bot = telebot.TeleBot(key)
 
 q = queue.Queue()
 
