@@ -6,7 +6,7 @@ admins_list = []
 admin_users = []
 start_log = []
 start_time_log = []
-bot = telebot.TeleBot("6250127063:AAE73LWwK0-l_u_UmSjXRa2XhCwIu3ihcG8")
+bot = telebot.TeleBot("")
 
 q = queue.Queue()
 
