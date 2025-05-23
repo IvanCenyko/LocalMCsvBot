@@ -4,7 +4,7 @@ import public_ip as ip
 from dotenv import load_dotenv
 import os #provides ways to access the Operating System and allows us to read the environment variables
 
-load_dotenv()
+load_dotenv(".env")
 
 key = os.getenv("TELEGRAM_KEY")
 
